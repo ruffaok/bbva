@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001a3e; /* Azul mucho más oscuro */
+    color: #ffffff;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left span {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.close-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 120px;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* Ajustar según la altura de la barra superior */
+    margin-top: 70px; /* Espacio para la barra superior */
+    padding: 0 20px; /* Espacio lateral para pantallas pequeñas */
+}
+
+.login-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px; /* Ancho máximo más adecuado */
+    box-sizing: border-box;
+    position: relative;
+}
+
+h1 {
+    font-size: 20px;
+    color: #001a3e; /* Azul mucho más oscuro */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox-group label {
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.virtual-keyboard {
+    background-color: #001a3e; /* Azul mucho más oscuro */
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.virtual-keyboard:hover {
+    background-color: #000d1a;
+}
+
+button[type="submit"] {
+    background-color: #001a3e; /* Azul mucho más oscuro */
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #000d1a;
+}
+
+.forgot-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.forgot-info p {
+    margin: 5px 0;
+}
+
+.forgot-info a {
+    color: #001a3e; /* Azul mucho más oscuro */
+    text-decoration: none;
+}
+
+.forgot-info a:hover {
+    text-decoration: underline;
+}
+
+.bbva-image {
+    position: fixed;
+    top: 15px; /* Ajustar según la altura de la barra superior */
+    right: 15px; /* Ajustar para que esté alineada a la derecha */
+    z-index: 0; /* Asegurar que esté detrás del formulario */
+}
+
+.bbva-image img {
+    width: 150px; /* Ajustar el tamaño según necesidad */
+}
